@@ -1,10 +1,29 @@
 import React from 'react'
 
-import { ExampleComponent } from 'heading-color'
-import 'heading-color/dist/index.css'
+import  {ColoredHeadingOne ,ColoredHeadingTwo }  from 'heading-color';
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+class App extends React.Component{
+
+  render(){
+
+    return(
+
+      <div>
+        <ColoredHeadingOne
+        text = "Color Heading is working"
+        color={"red"}
+        />
+
+        {/* othor component */}
+        <ColoredHeadingOne
+        text = "Color Heading 2  is working"
+        color={"blue"}
+        />
+
+      </div>
+    )
+  }
+
+
 }
-
 export default App
